@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2f363e;
+}
+
+.clock{
+  position: relative;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#time{
+    display: block;
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+#time div{
+  margin: 0 5px;
+}
+
+#hours{
+  color: #ff2972;
+}
+#minutes{
+  color: #fee800;
+}
+#seconds{
+  color: #04fc43;
+}
+
+.clock svg{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+}
+
+.clock svg circle{
+  fill: none;
+  stroke-width: 5;
+  stroke-dasharray: 440;
+  stroke-dashoffset: 440;
+  transition: stroke-dashoffset 0.5s;
+}
+
+#hh{
+  stroke: #ff2972; 
+}
+
+#mm{
+  stroke: #fee800; 
+}
+
+#ss{
+  stroke: #04fc43; 
+}
